@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>N.Fits — N.Fits, Happy Prices</title>
+<style>
+:root{--pink:#f4c8cf;--rose:#c75f75;--cream:#fffaf5;--ink:#292323;--sage:#dce7d7}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream)}
+.top{background:var(--ink);color:white;text-align:center;padding:10px;font-size:12px;letter-spacing:1.5px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:20px 6%;border-bottom:1px solid #eee0d9;background:#fffaf5;position:sticky;top:0;z-index:2}
+.logo{font-family:Georgia,serif;font-size:25px;font-weight:bold;letter-spacing:-1px}.logo span{color:var(--rose)}
+nav{display:flex;gap:18px;font-size:13px}nav a{color:inherit;text-decoration:none}
+.hero{padding:58px 7%;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;background:linear-gradient(120deg,#f9e2e2,#fff8ef 60%,#e7eee1)}
+.eyebrow{text-transform:uppercase;letter-spacing:3px;color:var(--rose);font-size:11px;font-weight:bold}
+h1{font-family:Georgia,serif;font-size:clamp(42px,6vw,76px);line-height:.98;letter-spacing:-2px;margin:14px 0}
+h1 em{color:var(--rose);font-weight:normal}.hero p{line-height:1.7;color:#625858;max-width:440px}
+.btn{display:inline-block;background:var(--ink);color:white;border:0;padding:14px 20px;text-decoration:none;border-radius:3px;font-size:12px;letter-spacing:1px;cursor:pointer;margin-top:10px}
+.hero-art{min-height:320px;border-radius:48% 48% 8px 8px;background:#e6d4c7;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.hero-art img{width:100%;height:100%;min-height:320px;object-fit:cover;position:absolute}
+.sticker{position:absolute;right:14px;bottom:18px;background:#fffaf5;padding:15px;border-radius:50%;font-family:Georgia,serif;text-align:center;transform:rotate(9deg);font-size:13px}
+section{padding:52px 6%}.section-head{text-align:center;margin-bottom:28px}.section-head h2{font:36px Georgia,serif;margin:8px 0}.section-head p{color:#766b67;font-size:14px}
+.filters{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:20px 0 28px}
+.filter{background:white;border:1px solid #e8d9d4;padding:10px 16px;border-radius:30px;cursor:pointer}.filter.active{background:var(--ink);color:white}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.product{background:white;padding:10px;border:1px solid #f0e5df}.product img{width:100%;aspect-ratio:4/5;object-fit:cover;background:#f4e8e1}.product h3{font-size:14px;margin:12px 0 5px}.meta{display:flex;justify-content:space-between;align-items:center;font-size:13px}.price{font-weight:bold}.old{color:#9a8e89;text-decoration:line-through;font-size:11px;margin-left:5px}.add{width:100%;border:1px solid #292323;background:white;padding:10px;margin-top:12px;cursor:pointer;font-size:12px}.add:hover{background:var(--ink);color:white}
+.banner{margin:0 6% 40px;padding:28px;background:var(--sage);display:flex;align-items:center;justify-content:space-between;gap:20px}.banner h2{font:30px Georgia,serif;margin:5px 0}.banner p{font-size:13px;line-height:1.5}
+footer{background:#292323;color:white;padding:34px 6%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px}footer p{color:#d7ccca;line-height:1.6}.note{font-size:11px;color:#c7b8b5;max-width:380px}
+.cart{position:fixed;bottom:18px;right:18px;background:var(--rose);color:white;border:0;border-radius:30px;padding:14px 18px;box-shadow:0 5px 20px #0002;cursor:pointer;z-index:5}
+@media(max-width:760px){header{padding:15px 5%}nav{gap:10px;font-size:11px}.hero{grid-template-columns:1fr;padding:42px 6%}.hero-art{min-height:250px}.hero-art img{min-height:250px}.grid{grid-template-columns:repeat(2,1fr);gap:10px}section{padding:38px 5%}.banner{margin:0 5% 30px;display:block}.logo{font-size:21px}}
+</style>
+</head>
+<body>
+<div class="top">✨ NEW SEASON, NEW STYLE — CUTE LOOKS AT HAPPY PRICES ✨</div>
+<header>
+  <div class="logo">N.Fits<span>.</span></div>
+  <nav><a href="#shop">SHOP</a><a href="#about">OUR VIBE</a><a href="#contact">CONTACT</a></nav>
+</header>
+<main>
+<section class="hero">
+ <div>
+  <div class="eyebrow">Fashion for everyone ♡</div>
+  <h1>N.Fits,<br><em>Happy Prices!</em></h1>
+  <p>Everyday styles for him and her. Find your vibe, wear your confidence, and make every outfit feel like you.</p>
+  <a class="btn" href="#shop">SHOP THE COLLECTION ↗</a>
+ </div>
+ <div class="hero-art">
+  <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85" alt="Friends enjoying fashion shopping">
+  <div class="sticker">N.Fits style<br>♡ your rules</div>
+ </div>
+</section>
+<section id="shop">
+ <div class="section-head"><div class="eyebrow">The good stuff</div><h2>Shop the collection</h2><p>Easy-to-love styles for every kind of day.</p></div>
+ <div class="filters">
+  <button class="filter active" data-cat="All">All styles</button><button class="filter" data-cat="Girls">For her</button><button class="filter" data-cat="Boys">For him</button><button class="filter" data-cat="Unisex">Unisex</button>
+ </div>
+ <div class="grid" id="products"></div>
+</section>
+<div class="banner" id="about"><div><div class="eyebrow">Your daily dose of style</div><h2>Good clothes. Better mood. ♡</h2><p>Comfy fits, cute details, and styles made for everyone.</p></div><a class="btn" href="#shop">FIND YOUR FIT</a></div>
+</main>
+<footer id="contact">
+ <div><div class="logo">N.Fits<span>.</span></div><p>“Har look mein style,<br>har price mein smile.”</p></div>
+ <div><strong>LET'S CONNECT</strong><p>Instagram: @yourbrand<br>WhatsApp orders: add your number</p></div>
+ <div><strong>PLEASE NOTE</strong><p class="note">Demo storefront: replace the sample products, prices, brand name, Instagram handle and WhatsApp number before sharing with customers. Orders are not automatically processed.</p></div>
+</footer>
+<button class="cart" id="cartBtn">♡ Bag (<span id="count">0</span>)</button>
+<script>
+const items=[
+ {name:"Blush Everyday Tee",cat:"Girls",price:399,old:499,img:"https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=600&q=80"},
+ {name:"Classic Street Tee",cat:"Boys",price:449,old:599,img:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80"},
+ {name:"Soft Neutral Hoodie",cat:"Unisex",price:799,old:999,img:"https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=600&q=80"},
+ {name:"Weekend Denim",cat:"Girls",price:899,old:1099,img:"https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=600&q=80"},
+ {name:"Everyday Oversized Tee",cat:"Unisex",price:499,old:649,img:"https://images.unsplash.com/photo-1529379767365-5b9d9d7f6b3a?auto=format&fit=crop&w=600&q=80"},
+ {name:"Casual Layer Shirt",cat:"Boys",price:699,old:849,img:"https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=600&q=80"},
+ {name:"Cute Weekend Top",cat:"Girls",price:549,old:699,img:"https://images.unsplash.com/photo-1566206091558-7f218b696731?auto=format&fit=crop&w=600&q=80"},
+ {name:"Comfy Day Hoodie",cat:"Boys",price:799,old:999,img:"https://images.unsplash.com/photo-1578681994506-b8f463449011?auto=format&fit=crop&w=600&q=80"}
+];
+let bag=[],active="All";
+function render(){document.getElementById("products").innerHTML=items.filter(x=>active==="All"||x.cat===active).map((x,i)=>`<article class="product"><img loading="lazy" src="${x.img}" alt="${x.name}"><h3>${x.name}</h3><div class="meta"><span class="price">₹${x.price}<span class="old">₹${x.old}</span></span><span>♡</span></div><button class="add" onclick="addItem('${x.name}')">ADD TO BAG +</button></article>`).join("")}
+function addItem(name){bag.push(name);document.getElementById("count").textContent=bag.length}
+document.querySelectorAll(".filter").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");active=b.dataset.cat;render()}));
+document.getElementById("cartBtn").addEventListener("click",()=>alert(bag.length?("Your bag:\\n"+bag.join("\\n")+"\\n\\nDemo only — connect WhatsApp/payment before taking real orders."):"Your bag is empty — find a cute fit!"));
+render();
+</script>
+</body>
+</html>
